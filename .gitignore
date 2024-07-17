@@ -1,0 +1,13 @@
+# Ignore Structurizr 
+Architecture/.structurizr/
+Architecture/workspace.json
+
+# ignore Visual Studio
+.vs/
+
+# ignore Visual Studio Code
+
+
+# ignore Jetbrains
+.idea/
+/Mercury.AppHost/bin/
