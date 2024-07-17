@@ -4,6 +4,10 @@ Architecture/workspace.json
 
 # ignore Visual Studio
 .vs/
+/Infrastructure/*/bin/*
+/infrastructure/*/obj/*
+/test/*/*/bin/*
+/test/*/*/obj/*
 
 # ignore Visual Studio Code
 
