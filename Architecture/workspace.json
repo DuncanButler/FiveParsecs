@@ -1,0 +1,152 @@
+{
+  "configuration" : {
+    "scope" : "SoftwareSystem"
+  },
+  "description" : "Description",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedAgent" : "structurizr-javascript",
+  "lastModifiedDate" : "2024-07-18T22:37:23Z",
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "Player",
+      "properties" : {
+        "structurizr.dsl.identifier" : "player"
+      },
+      "relationships" : [ {
+        "description" : "uses",
+        "destinationId" : "2",
+        "id" : "6",
+        "properties" : {
+          "structurizr.dsl.identifier" : "7dae8cb5-6645-4c98-bd59-21f6fe024c3c"
+        },
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person"
+    } ],
+    "softwareSystems" : [ {
+      "documentation" : { },
+      "id" : "2",
+      "location" : "Unspecified",
+      "name" : "User Interface",
+      "properties" : {
+        "structurizr.dsl.identifier" : "ui"
+      },
+      "relationships" : [ {
+        "description" : "uses",
+        "destinationId" : "3",
+        "id" : "7",
+        "properties" : {
+          "structurizr.dsl.identifier" : "7116ddbf-a616-4efa-8236-9c0bd4729d3a"
+        },
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Software System"
+    }, {
+      "containers" : [ {
+        "components" : [ {
+          "documentation" : { },
+          "id" : "5",
+          "name" : "Crew Member",
+          "properties" : {
+            "structurizr.dsl.identifier" : "crewmember"
+          },
+          "tags" : "Element,Component"
+        } ],
+        "documentation" : { },
+        "id" : "4",
+        "name" : "Ship Crew",
+        "properties" : {
+          "structurizr.dsl.identifier" : "crew"
+        },
+        "tags" : "Element,Container"
+      } ],
+      "documentation" : { },
+      "id" : "3",
+      "location" : "Unspecified",
+      "name" : "Backend",
+      "properties" : {
+        "structurizr.dsl.identifier" : "backend"
+      },
+      "tags" : "Element,Software System"
+    } ]
+  },
+  "name" : "Name",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICBtb2RlbCB7CiAgICAgICAgcGxheWVyID0gcGVyc29uICJQbGF5ZXIiCgogICAgICAgIHVpID0gc29mdHdhcmVTeXN0ZW0gIlVzZXIgSW50ZXJmYWNlIiB7CgogICAgICAgIH0KCiAgICAgICAgCiAgICAgICAgYmFja2VuZCA9IHNvZnR3YXJlU3lzdGVtICJCYWNrZW5kIiB7CiAgICAgICAgICAgIGNyZXcgPSBjb250YWluZXIgIlNoaXAgQ3JldyIgewogICAgICAgICAgICAgICAgY3Jld01lbWJlciA9IGNvbXBvbmVudCAiQ3JldyBNZW1iZXIiCiAgICAgICAgICAgIH0gCiAgICAgICAgfQoKICAgICAgICBwbGF5ZXIgLT4gdWkgInVzZXMiCiAgICAgICAgdWkgLT4gYmFja2VuZCAidXNlcyIKCiAgICAgICAgCiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN5c3RlbUNvbnRleHQgdWkgIlN5c3RlbSIgewogICAgICAgICAgICBpbmNsdWRlICoKCiAgICAgICAgfQoKICAgICAgICBjb250YWluZXIgYmFja2VuZCAiQ29udGFpbmVyIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KICAgICAgICBjb21wb25lbnQgY3JldyAiQ3JldyIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CiAgICB9CgogICAgY29uZmlndXJhdGlvbiB7CiAgICAgICAgc2NvcGUgc29mdHdhcmVzeXN0ZW0KICAgIH0KCn0K"
+  },
+  "views" : {
+    "componentViews" : [ {
+      "containerId" : "4",
+      "dimensions" : {
+        "height" : 1748,
+        "width" : 2480
+      },
+      "elements" : [ {
+        "id" : "5",
+        "x" : 70,
+        "y" : 90
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "key" : "Crew",
+      "order" : 3,
+      "paperSize" : "A5_Landscape"
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "Crew",
+      "metadataSymbols" : "SquareBrackets",
+      "styles" : { },
+      "terminology" : { }
+    },
+    "containerViews" : [ {
+      "dimensions" : {
+        "height" : 1748,
+        "width" : 2480
+      },
+      "elements" : [ {
+        "id" : "4",
+        "x" : 315,
+        "y" : 240
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "key" : "Container",
+      "order" : 2,
+      "paperSize" : "A5_Landscape",
+      "softwareSystemId" : "3"
+    } ],
+    "systemContextViews" : [ {
+      "dimensions" : {
+        "height" : 1748,
+        "width" : 2480
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 230,
+        "y" : 145
+      }, {
+        "id" : "2",
+        "x" : 985,
+        "y" : 545
+      }, {
+        "id" : "3",
+        "x" : 1715,
+        "y" : 1010
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "key" : "System",
+      "order" : 1,
+      "paperSize" : "A5_Landscape",
+      "relationships" : [ {
+        "id" : "6"
+      }, {
+        "id" : "7"
+      } ],
+      "softwareSystemId" : "2"
+    } ]
+  }
+}

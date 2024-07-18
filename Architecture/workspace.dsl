@@ -1,14 +1,35 @@
 workspace {
 
     model {
-        user = person "User"
-        softwareSystem = softwareSystem "Software System"
+        player = person "Player"
 
-        user -> softwareSystem "Uses"
+        ui = softwareSystem "User Interface" {
+
+        }
+
+        
+        backend = softwareSystem "Backend" {
+            crew = container "Ship Crew" {
+                crewMember = component "Crew Member"
+            } 
+        }
+
+        player -> ui "uses"
+        ui -> backend "uses"
+
+        
     }
 
     views {
-        systemContext softwareSystem "Diagram1" {
+        systemContext ui "System" {
+            include *
+
+        }
+
+        container backend "Container" {
+            include *
+        }
+        component crew "Crew" {
             include *
         }
     }
